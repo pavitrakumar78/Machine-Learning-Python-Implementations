@@ -220,4 +220,4 @@ pred = pred.argmax(1)
 
 from sklearn.metrics import accuracy_score
 
-"Prediction accuracy: ",print accuracy_score(y_test,pred)
+print "Prediction accuracy: ",accuracy_score(y_test,pred)
