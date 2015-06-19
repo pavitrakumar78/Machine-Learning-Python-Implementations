@@ -1,6 +1,6 @@
 # Machine-Learning---Python-Implementations
-Basic ML algorithms written from scratch in python using numpy.
-Most of the code is just ported from the Octave code from Andrew Ng's Course.
+Basic ML algorithms written from scratch in python using numpy.  
+Most of the code is just Python version of the Octave code from Andrew Ng's Course.
 
 Algorithms To Do:
 - Linear regression
