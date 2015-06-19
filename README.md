@@ -3,11 +3,11 @@ Basic ML algorithms written from scratch in python using numpy.
 Most of the code is just Python version of the Octave code from Andrew Ng's Course.
 
 Algorithms To Do:
-- Linear regression
+- ~~Linear regression~~
 - Logistic regression
 - Logistic regression (Multi class)
 - SVM
 - K - means
+- ~~Neural networks~~
 
-Algorithms completed:
-- Neural Newtorks
+
