@@ -76,7 +76,7 @@ def fit(X,y,maxiter = 50,method = 'TNC',lam = 0.1):
 
     for i in range(no_of_labels):
         temp_y = (y == (i)) + 0 # here labels are 0,1,2,3.. if they are 1,2,3,4... use: temp_y = (y == (i+1))+0
-        #temp_y is a vector of size no_of_training_examples x 1 
+        #temp_y is a vector of size no_of_training_examples
         #since each iteration corresponds to finding theta for a single class (one-vs-all)
         #each time, we only take the predection of class 'i'on all training example
         
