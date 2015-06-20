@@ -118,7 +118,7 @@ def feed_forward_back_prop(Theta1,Theta2,input_layer_size,hidden_layer_size,outp
     J = f
     print "J is: ",J
     
-    reg_term = (lam/(2.0*no_training_samples))*(np.sum(np.sum(np.power(Theta1[:,1:],2),axis=0))+np.sum(np.sum(Theta2[:,1:],axis=0)))
+    reg_term = (lam/(2.0*no_training_samples))*(np.sum(np.sum(np.power(Theta1[:,1:],2),axis=0))+np.sum(np.sum(np.power(Theta2[:,1:],2),axis=0)))
     print "Regularization term is: ",reg_term    
     J = J + reg_term
     print "J after regularization: ",J,"\n"
