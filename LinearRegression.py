@@ -117,26 +117,28 @@ def lin_reg(X,theta):
 
 
 
-def prep_data(X,y,test_size):
-    X_train, X_test, y_train, y_test = cross_validation.train_test_split(X, y, test_size=0.4)
-    return X_train,X_test,y_train,y_test
-    
- 
-
 """
 Loading and training on toy dataset (boston land prices)
 """
 
 boston = datasets.load_boston()
 
-
+"""
+linear regression with multiple variables
+"""
 X = boston.data
 y = boston.target
 
+"""
+#linear regression with single variable
+X = np.asmatrix(boston.data[:,0]).T #taking only the 1st column
+y = boston.target
+"""
 
-   
 
 X_train, X_test, y_train, y_test = cross_validation.train_test_split(X, y, test_size=0.4)
+
+
 
 normal_eqn_theta = np.asmatrix(normal_eqn_theta(X_train,y_train)).T
 
@@ -151,5 +153,5 @@ pred2 = lin_reg(X_test,gradient_descent_theta)
 
 
 
-print "MSE for normal_eqn Theta is: ", mean_squared_error(y_test, pred1)  
-print "MSE for gradient_desc Theta is: ", mean_squared_error(y_test, pred2)  
+print "MSE for prediction using normal_eqn Theta is: ", mean_squared_error(y_test, pred1)  
+print "MSE for prediction using gradient_desc Theta is: ", mean_squared_error(y_test, pred2)  
