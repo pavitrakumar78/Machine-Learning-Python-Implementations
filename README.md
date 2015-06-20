@@ -4,7 +4,7 @@ Most of the code is just Python version of the Octave code from Andrew Ng's Cour
 
 Algorithms To Do:
 - ~~Linear regression~~
-- Logistic regression
+- ~~Logistic regression~~
 - SVM
 - K - means
 - ~~Neural networks~~
