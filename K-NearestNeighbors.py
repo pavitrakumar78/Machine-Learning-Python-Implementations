@@ -63,6 +63,32 @@ def predict(X_test,X_train,y_train,k = 5):
     return predicted
     
 
+def normalize(X):
+    X_norm = X
+    mu = np.zeros((1,X.shape[1]))
+    sigma = np.zeros((1,X.shape[1]))
+    """
+    First, for each feature dimension, compute the mean
+    of the feature and subtract it from the dataset,
+    storing the mean value in mu. Next, compute the 
+    standard deviation of each feature and divide
+    each feature by it's standard deviation, storing
+    the standard deviation in sigma. 
+    
+    Note that X is a matrix where each column is a 
+    feature and each row is an example. You need 
+    to perform the normalization separately for 
+    each feature. - taken from Andrew Ng's comments
+    """
+    mu = np.mean(X,axis = 0)
+    #Taking column-wise mean
+    X_norm = X_norm - mu
+    sigma = np.std(X,axis = 0)
+    X_norm = X_norm/sigma
+    
+    return X_norm
+
+
 """
 testing using IRIS data set
 """
@@ -70,6 +96,8 @@ testing using IRIS data set
 iris = datasets.load_iris()
 X = iris.data
 y = iris.target
+
+#X = normalize(X) #if needed
 
 X_train, X_test, y_train, y_test = cross_validation.train_test_split(X, y, test_size=0.8)
 
