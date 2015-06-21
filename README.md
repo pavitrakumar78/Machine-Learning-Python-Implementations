@@ -6,7 +6,8 @@ Algorithms To Do:
 - ~~Linear regression~~
 - ~~Logistic regression~~
 - SVM
-- K - means
+- K - means[Clustering]
+- ~~K - Nearest Neighbors[Classification]~~
 - ~~Neural networks~~
 
 
