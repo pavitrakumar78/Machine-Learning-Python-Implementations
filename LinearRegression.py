@@ -23,6 +23,8 @@ from sklearn.metrics import mean_squared_error
 
 def normal_eqn_theta(X,y):
     #This is the closed-form solution to lienar regression
+    
+    #Insert a column(axis = 1) of 1s at 0th pos.
     X = np.insert(X,0,1,axis=1)
     
     a = inv(np.dot(X.T , X))
