@@ -25,8 +25,8 @@ y is the response vector -the output
 
 """
 Size of Theta1 is no.of hiddenlayers(in hidden layer1) x no. of input layers
-i.e simply the [A]x[B] where A on the right side corresponds to the no.of units
-in the layer on the left, similarly B on the left side(of the dim) corrensponds to
+i.e simply the [A]x[B] where A on the left side corresponds to the no.of units
+in the layer on the left, similarly B on the right side(of the dim) corrensponds to
 the no.of units in the layer on the right side 
 So, our Theta1's dim is hidden_layer_size x input_layer_size + 1 
 Similarly the Theta2 it is output_layer_size x hidden_layer_size + 1
