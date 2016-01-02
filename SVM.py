@@ -177,5 +177,5 @@ y_predict = np.sign(y_predict + b)
 print "accuracy is ",(sum(y_predict==y_test)/len(y_predict))
 
 
-#right now, it only works on binary classification tasks but one-vs -all technique can be used to implement a multi-classification tasks.
+#right now, it only works on binary classification tasks but one-vs-all technique can be used to implement a multi-class classification algo.
 
