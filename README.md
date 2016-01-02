@@ -6,7 +6,7 @@ Some of the algorithms are just Python versions of the Octave code from Andrew N
 Algorithms To Do:
 - ~~Linear regression~~
 - ~~Logistic regression~~
-- SVM
+- ~~SVM~~
 - ~~K - Nearest Neighbors[Classification]~~
 - ~~Neural networks~~
 - Naive Bayes
