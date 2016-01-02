@@ -65,9 +65,12 @@ P = cvxopt.matrix(Y * K)
 Q = cvxopt.matrix(-1 * np.ones(n_samples))
 
 
-#now, we have the solver takes other optional args for constraints
-
+#now, we have the solver which looks like this:
 #cvxopt.solvers.qp(P, Q, G, h, A, b) 
+
+#We also need to pass in the constraints h,A,b,G
+
+
 
 A = cvxopt.matrix(y_train, (1,n_samples),tc='d') #reshaping (1x150 matrix)
 b = cvxopt.matrix(0.0)
