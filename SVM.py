@@ -28,7 +28,7 @@ y = np.hstack((y1, y2))
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
 
 
-#X is 150x 4 matrix (4 featues, 150 data points)
+#X is 150x 4 matrix (2 featues, 150 data points)
 #y is 150x 1 matrix 
 
 n_samples = X_train.shape[0]
